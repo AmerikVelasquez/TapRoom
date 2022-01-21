@@ -39,22 +39,14 @@ class TapControl extends React.Component {
   }
 
   handleDecreasingTap = (id) => {
-    if(this.state.mainTapList.length>1){
-      const selectedTap = this.state.mainTapList.filter(tap => tap.id === id)[0]
+    const selectedTap = this.state.mainTapList.filter(tap => tap.id === id)[0]
+    if(this.state.selectedTap.pints>0){
       selectedTap.pints --;
       const newMainTapList = this.state.mainTapList.filter(tap => tap.id !== id).concat(selectedTap);
       this.setState({
         mainTapList: newMainTapList
       });
-    } else {
-      const selectedTap = this.state.mainTapList.filter(tap => tap.id === id)[0]
-      selectedTap.pints --;
-      const newTapListArray = []
-      const changedTapArray = newTapListArray.concat(selectedTap);
-      this.setState({
-        mainTapList: changedTapArray
-      });
-    }
+    } 
   }
 
   render(){
