@@ -20,7 +20,8 @@ A React App That allows for kegs to be added to the Tap room to be purchased. Th
 3. run the command `npm install` into the terminal
 4. run the command `npm start` to start the application 
 ## Component Diagram
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FBQD55vqGwe2v44K2FnPCIs%2FTap-Room-React%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+![figma for react](https://user-images.githubusercontent.com/84699325/150484358-8383af83-760b-46ae-8e2d-d905b14f8ba6.png)
+
 
 ## Known Bugs
 no known bugs
